@@ -1,0 +1,231 @@
+body {
+  background: #19203a !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  /* padding: 15px 20px; */
+  background-color: rgb(66, 81, 148);
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ================================================ Start css for header ====================================================*/
+* {
+  box-sizing: border-box;
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* ================================================ Start css for footer ===================================================*/
+.footer {
+  position: fixed;
+  padding: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 80, 107);
+  color: white;
+  text-align: center;
+}
+
+.some-class{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.txt2 {
+  position: absolute;
+  left: 0;
+  top: -2.8rem;
+}
+
+.some-class input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
+
+
+label span:before,
+label span:after {
+  content: "";
+}
+
+
+
+.some-class label {
+  display: inline-block;
+  /* margin-right: 1rem; */
+}
+
+
+.fc-toolbar-title {
+  color: black;
+}
+
+.fa-check {
+  display: none;
+  position: absolute;
+  left: 7px;
+  z-index: 1;
+  top: 1px;
+  font-size: 1.2rem;
+}
+
+.radio[type="radio"]:checked + span .fa-check {
+  display: inline-block;
+}
+
+
+label span::before {
+  border: 2px solid rgb(255, 255, 255);
+  width: 1.4rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+label span::after {
+  width: 1.2rem;
+  height: 1.25rem;
+  top: 0px;
+  left: 1.5px;
+  background: #222021;
+  position: absolute;
+  transition: 300ms;
+  opacity: 1;
+
+}
+
+label span {
+  position: relative;
+  line-height: 1.7rem;
+}
+
+.fa-check{
+  left: 4px;
+  top: 1px;
+  font-size: 1rem;
+}
+
+
+label:nth-child(1) span::after {
+  background: #191d38 !important;
+}
+
+label:nth-child(2) span::after {
+  background: #d4cfc3 !important;
+}
+
+label:nth-child(3) span::after {
+  background: #017058 !important;
+}
+
+label:nth-child(4) span::after {
+  background: #4b4b4b !important;
+}
+
+label:nth-child(5) span::after {
+  background: #4cb5db !important;
+}
+
+@media (max-width: 576px) {
+  .some-class label {
+    font-size: 0.8rem;
+  }
+
+  label span::before {
+    border: 2px solid rgb(255, 255, 255);
+    width: 1.4rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  label span::after {
+    width: 1.2rem;
+    height: 1.25rem;
+    top: -3px;
+    left: 2px;
+  }
+
+  label span {
+    line-height: 1.7rem;
+  }
+
+  .fa-check{
+    left: 4px;
+    top: -1px;
+    font-size: 1rem;
+  }
+
+  .txt {
+    font-size: 1.1rem;
+  }
+
+  .form-control.custom {
+    height: calc(1.1em + .75rem + 2px);
+  }
+}
